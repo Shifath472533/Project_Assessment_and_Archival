@@ -1,0 +1,31 @@
+.loader5 {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader5::after,
+.loader5::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgb(35, 135, 168);
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  animation: rotation 2s ease-in-out infinite;
+}
+.loader5::after {
+  border-color: #110a53;
+  animation-delay: 1s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

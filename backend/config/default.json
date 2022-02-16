@@ -1,0 +1,5 @@
+{
+	"mongoURI": "mongodb+srv://rough:rough22@mern-test.fmyrd.mongodb.net/<dbname>?retryWrites=true&w=majority",
+
+	"jwtToken": "mySecretToken"
+}

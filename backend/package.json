@@ -1,0 +1,36 @@
+{
+	"name": "archieve-n-assessment",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"server": "nodemon server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mfirozahmed/Archieve-N-Assessment.git"
+	},
+	"author": "Team_01",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mfirozahmed/Archieve-N-Assessment/issues"
+	},
+	"homepage": "https://github.com/mfirozahmed/Archieve-N-Assessment#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"config": "^3.3.3",
+		"cors": "^2.8.5",
+		"csv-parser": "^3.0.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.9.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.11.9",
+		"multer": "^1.4.2",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.6"
+	}
+}

@@ -1,0 +1,81 @@
+{
+  "name": "project-management-system",
+  "version": "1.1.0",
+  "private": true,
+  "homepage": "/",
+  "dependencies": {
+    "@date-io/date-fns": "1.x",
+    "@date-io/dayjs": "1.x",
+    "@date-io/luxon": "1.x",
+    "@date-io/moment": "1.x",
+    "@headlessui/react": "^1.3.0",
+    "@material-tailwind/react": "^0.3.4",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@react-google-maps/api": "^2.1.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "chart.js": "2.9.4",
+    "date-fns": "^2.22.1",
+    "dayjs": "^1.10.5",
+    "draft-js": "^0.11.7",
+    "es6-shim": "^0.35.6",
+    "lodash": "^4.17.21",
+    "luxon": "^1.27.0",
+    "moment": "^2.29.1",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "react-card-image-gallery": "^1.0.6",
+    "react-dom": "^17.0.2",
+    "react-mui-draft-wysiwyg": "^1.0.3",
+    "react-promise-tracker": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^7.0.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "build:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css --env production",
+    "watch:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css -w",
+    "start:react": "react-scripts start",
+    "start": "npm-run-all -p watch:tailwind start:react",
+    "build": "npm run build:tailwind && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "npm:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "yarn:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.4"
+  },
+  "optionalDependencies": {
+    "@babel/core": "7.14.0",
+    "typescript": "4.2.4"
+  }
+}

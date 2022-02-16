@@ -1,0 +1,7 @@
+backend/node_modules
+backend/uploads
+backend/archive
+
+
+backend/package-lock.json
+backend/test.rest
