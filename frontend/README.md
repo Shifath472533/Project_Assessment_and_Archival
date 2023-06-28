@@ -11,6 +11,4 @@ then
  `npm start`
  or
  `yarn start`
- 
- 
- Best of Luck
+
